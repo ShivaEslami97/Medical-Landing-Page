@@ -1,0 +1,66 @@
+.header {
+  background-color: var(--primary-color-2);
+}
+.header__item-left {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 19%;
+  flex: 0 0 19%;
+  max-width: 19%;
+}
+.header__item-center {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 48%;
+  flex: 0 0 48%;
+  max-width: 48%;
+}
+.header__item-right {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+  max-width: 30%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+/* ---- nav ---- */
+.nav__list {
+  margin: 0;
+  padding: 0;
+  gap: 3.5rem;
+}
+.navbar {
+  padding: 3.5rem 0rem;
+}
+.site-logo {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-2x-bold);
+  color: var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.site-logo i {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 0.7rem 0.7rem;
+  border-radius: var(--border-radius-sm);
+  -webkit-border-radius: var(--border-radius-sm);
+  -moz-border-radius: var(--border-radius-sm);
+  -ms-border-radius: var(--border-radius-sm);
+  -o-border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-3xl);
+}
+.header__item-right .btn__secondary {
+  background: transparent;
+}
+.nav__link {
+  color: var(--primary-color);
+  font-weight: var(--font-semi-bold);
+}

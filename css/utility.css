@@ -1,0 +1,73 @@
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+.flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  /* gap: var(--gap, 1rem); */
+}
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+.d-block {
+  display: block;
+}
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  width: 1400px;
+  max-width: 90%;
+}
+.col {
+  width: 100%;
+}
+.col + .col {
+  margin-left: 3rem;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.ml-0 {
+  margin-left: 0;
+}
+.mr-0 {
+  margin-left: 0;
+}
+.align-items-center {
+  -ms-flex-align: center;
+  align-items: center;
+}
+.justify-content-center {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.justify-content-between {
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+}
+.position-absolute {
+  position: absolute;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-15 {
+  gap: 1.5rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.gap-25 {
+  gap: 2.5rem;
+}
+.gap-3 {
+  gap: 3rem;
+}
