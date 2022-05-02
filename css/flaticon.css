@@ -1,0 +1,62 @@
+/*
+Flaticon icon font: Flaticon
+*/
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/Flaticon.eot");
+	src: url("../fonts/Flaticond41d.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/Flaticon.woff2") format("woff2"),
+	url("../fonts/Flaticon.woff") format("woff"),
+	url("../fonts/Flaticon.ttf") format("truetype"),
+	url("../fonts/Flaticon.svg#Flaticon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: "Flaticon";
+		src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+	}
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+	font-style: normal;
+}
+
+.flaticon-tooth:before { content: "\f100"; }
+.flaticon-kidneys:before { content: "\f101"; }
+.flaticon-thinking:before { content: "\f102"; }
+.flaticon-heart:before { content: "\f103"; }
+.flaticon-bones:before { content: "\f104"; }
+.flaticon-gastroenterologist:before { content: "\f105"; }
+.flaticon-doctor:before { content: "\f106"; }
+.flaticon-doctor-1:before { content: "\f107"; }
+.flaticon-appointment:before { content: "\f108"; }
+.flaticon-share:before { content: "\f109"; }
+.flaticon-padlock:before { content: "\f10a"; }
+.flaticon-dashboard:before { content: "\f10b"; }
+.flaticon-calendar:before { content: "\f10c"; }
+.flaticon-medical:before { content: "\f10d"; }
+.flaticon-invoice:before { content: "\f10e"; }
+.flaticon-review:before { content: "\f10f"; }
+.flaticon-speech-bubble:before { content: "\f110"; }
+.flaticon-profile:before { content: "\f111"; }
+.flaticon-pin:before { content: "\f112"; }
+.flaticon-search:before { content: "\f113"; }
+.flaticon-checked:before { content: "\f114"; }
+.flaticon-like:before { content: "\f115"; }
+.flaticon-wall-clock:before { content: "\f116"; }
+.flaticon-money:before { content: "\f117"; }
+.flaticon-heart-1:before { content: "\f118"; }
+.flaticon-envelope:before { content: "\f119"; }
+.flaticon-phone-call:before { content: "\f11a"; }
+.flaticon-play:before { content: "\f11b"; }
+.flaticon-check-mark:before { content: "\f11c"; }
+.flaticon-left-quote:before { content: "\f11d"; }
+.flaticon-caduceus-symbol:before { content: "\f11e"; }
+.flaticon-cancel:before { content: "\f11f"; }
+.flaticon-doctor-2:before { content: "\f120"; }
+.flaticon-left-arrow:before { content: "\f121"; }
+.flaticon-right-arrow:before { content: "\f122"; }
+.flaticon-enter:before { content: "\f123"; }

@@ -1,3 +1,31 @@
 .popular-searches {
   padding: 2.7em 0;
 }
+/* tabs */
+.tab__item {
+  color: #96979b;
+  font-weight: var(--font-semi-bold);
+  font-size: var(--font-size-1xl);
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.tab__item.active {
+  color: var(--primary-color);
+}
+.search__tabs {
+  padding-right: 2rem;
+  border-right: 2px solid var(--main-color);
+  -ms-flex: 0 0 13%;
+  flex: 0 0 13%;
+  max-width: 13%;
+}
+.tabs__content {
+  -ms-flex: 0 0 85%;
+  flex: 0 0 85%;
+  max-width: 85%;
+}
+.tab__content {
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  display: grid;
+  gap: 1.5rem;
+}
