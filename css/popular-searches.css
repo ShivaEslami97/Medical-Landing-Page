@@ -25,7 +25,7 @@
   max-width: 85%;
 }
 .tab__content {
-  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   display: grid;
   gap: 1.5rem;
 }
