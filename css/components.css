@@ -24,6 +24,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  gap: 0.7rem;
 }
 .btn__primary {
   color: var(--white-color);
@@ -36,4 +37,37 @@
   color: var(--primary-color);
   background: var(--primary-color-2);
   font-weight: var(--font-bold);
+}
+/* ------------------- */
+/* Inputs         */
+/* ------------------- */
+.form-group {
+  position: relative;
+}
+.form-input {
+  width: 100%;
+  outline: 0;
+  padding: 1.9rem 3.7rem;
+  outline: 0;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  border-radius: var(--border-radius-2sm);
+  -webkit-border-radius: var(--border-radius-2sm);
+  -moz-border-radius: var(--border-radius-2sm);
+  -ms-border-radius: var(--border-radius-2sm);
+  -o-border-radius: var(--border-radius-2sm);
+  font-size: var(--font-size-xl);
+  color: var(--primary-color-3);
+  transition: border-color 0.15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out;
+  -moz-transition: border-color 0.15s ease-in-out;
+  -ms-transition: border-color 0.15s ease-in-out;
+  -o-transition: border-color 0.15s ease-in-out;
+}
+.form-group i {
+  position: absolute;
+  font-size: var(--font-size-1xl);
+  left: 1rem;
+  top: calc(50% - 0.49em);
+  color: var(--primary-color);
 }

@@ -1,7 +1,13 @@
 /* ------------------- */
 /* Utility classes     */
 /* ------------------- */
-
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  width: 1400px;
+  max-width: 90%;
+}
+/* ---- ----*/
 .flex {
   display: -ms-flexbox;
   display: flex;
@@ -10,36 +16,16 @@
 
   /* gap: var(--gap, 1rem); */
 }
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
 .grid {
   display: -ms-grid;
   display: grid;
 }
-.d-block {
+.block {
   display: block;
-}
-.container {
-  padding-inline: 2em;
-  margin-inline: auto;
-  width: 1400px;
-  max-width: 90%;
-}
-.col {
-  width: 100%;
-}
-.col + .col {
-  margin-left: 3rem;
-}
-.mb-0 {
-  margin-bottom: 0;
-}
-.pb-0 {
-  padding-bottom: 0;
-}
-.ml-0 {
-  margin-left: 0;
-}
-.mr-0 {
-  margin-left: 0;
 }
 .align-items-center {
   -ms-flex-align: center;
@@ -52,6 +38,12 @@
 .justify-content-between {
   -ms-flex-pack: space-between;
   justify-content: space-between;
+}
+.flex-d-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .position-absolute {
   position: absolute;
@@ -70,4 +62,23 @@
 }
 .gap-3 {
   gap: 3rem;
+}
+/* ---- ----*/
+.col {
+  width: 100%;
+}
+.col + .col {
+  margin-left: 3rem;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.ml-0 {
+  margin-left: 0;
+}
+.mr-0 {
+  margin-left: 0;
 }
