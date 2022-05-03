@@ -48,17 +48,17 @@
                     <h1 class="hero__heading">Feel better about <br>
                         finding healthcare
                     </h1>
-                    <p class="hero__description">At Healthgrades, we take the guesswork out of finding the right
+                    <p class="hero__description">At Healthgrades, we take the guesswork out of finding the right <br>
                         doctors,
                         hospitals, and care for
                         you and your family.</p>
                     <div class="hero__features">
                         <div class="hero__features-box">
-                            <i class="fa-solid fa-users"></i>
+                            <img src="images/hero/4.png" alt="features image">
                             <span>Profiles for Every doctor in America</span>
                         </div>
                         <div class="hero__features-box">
-                            <i class="fa-solid fa-star"></i>
+                            <img src="images/hero/star1.png" alt="features image">
                             <span>More Than 10 Million Patient Ratings</span>
                         </div>
                     </div>
@@ -71,54 +71,56 @@
             </div>
         </section>
         <!-- search -->
-        <section class="search container">
-            <div class="search__banner">
-                <!-- search inputs -->
-                <div class="flex gap-3 justify-content-center">
-                    <div class="search__item">
-                        <div class="form-group">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input class="form-input" type="text" id="search"
-                                placeholder="Search Doctor, Conditions or Procedures">
+        <section class="search">
+            <div class="container flex justify-content-center">
+                <div class="search__banner">
+                    <!-- search inputs -->
+                    <div class="flex gap-3 justify-content-center">
+                        <div class="search__item">
+                            <div class="form-group">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input class="form-input" type="text" id="search"
+                                    placeholder="Search Doctor, Conditions or Procedures">
+                            </div>
+                        </div>
+                        <div class="search__item">
+                            <div class="form-group">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <input class="form-input" type="text" id="search"
+                                    placeholder="Search Doctor, Conditions or Procedures">
+                            </div>
+                        </div>
+                        <div class="search__item">
+                            <button type="button" class="btn btn__primary">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="search__item">
-                        <div class="form-group">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <input class="form-input" type="text" id="search"
-                                placeholder="Search Doctor, Conditions or Procedures">
+                    <!-- search tags -->
+                    <div class="search__description flex flex-d-column gap-15">
+                        <p>You may be looking for</p>
+                        <div class="search__tags flex gap-1">
+                            <button type="button" class="btn btn__secondary">Family Medicine
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <button type="button" class="btn btn__secondary">Pediatrics
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <button type="button" class="btn btn__secondary">Top Hospital
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <button type="button" class="btn btn__secondary">Telehealth
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <button type="button" class="btn btn__secondary">COVID-19
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <button type="button" class="btn btn__secondary">Orthopedic Surgery
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <button type="button" class="btn btn__secondary btn__more">More
+                            </button>
                         </div>
-                    </div>
-                    <div class="search__item">
-                        <button type="button" class="btn btn__primary">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </div>
-                </div>
-                <!-- search tags -->
-                <div class="search__description flex flex-d-column gap-15">
-                    <p>You may be looking for</p>
-                    <div class="search__tags flex gap-1">
-                        <button type="button" class="btn btn__secondary">Family Medicine
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                        <button type="button" class="btn btn__secondary">Pediatrics
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                        <button type="button" class="btn btn__secondary">Top Hospital
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                        <button type="button" class="btn btn__secondary">Telehealth
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                        <button type="button" class="btn btn__secondary">COVID-19
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                        <button type="button" class="btn btn__secondary">Orthopedic Surgery
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                        <button type="button" class="btn btn__secondary btn__more">More
-                        </button>
                     </div>
                 </div>
             </div>
@@ -180,6 +182,55 @@
                         </div>
                         <div class="tab__content" id="tab_content2" data-tab="2"></div>
                         <div class="tab__content" id="tab_content3" data-tab="3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Find doctor -->
+        <section class="find">
+            <div class="container flex">
+                <div class="find__text">
+                    <!-- section title -->
+                    <div class="section-title">
+                        <h2>Find the right doctor <br> right at your fingertips</h2>
+                        <p>Wecare give you the tools and information you need to</p>
+                    </div>
+                    <ul class="find__list">
+                        <li class="find__item">
+                            <i class="bx bx-search"></i>
+                            <h3>Search nearest hospital</h3>
+                            <p> Find doctors and hospitals based on the factor <br>
+                                that matter most to you</p>
+                        </li>
+                        <li class="find__item">
+                            <i class="bx bx-user-voice"></i>
+                            <h3>Search nearest hospital</h3>
+                            <p> Find doctors and hospitals based on the factor <br>
+                                that matter most to you</p>
+                        </li>
+                        <li class="find__item">
+                            <i class="bx bx-phone-call"></i>
+                            <h3>Search nearest hospital</h3>
+                            <p> Find doctors and hospitals based on the factor <br>
+                                that matter most to you</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="find__img">
+                    <img src="images/2-removebg-preview.png" alt="Find doctor image">
+                    <div class="circle circle--one"></div>
+                    <div class="circle circle--two"></div>
+                    <div class="circle circle--three"></div>
+                    <div class="find__search">
+                        <h4>Find the best doctor you need</h4>
+                        <div class="form-group">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input class="form-input" type="text" id="search" placeholder="Search Doctor">
+                        </div>
+                        <div class="form-group">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input class="form-input" type="text" id="search" placeholder="Set Location">
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 .popular-searches {
-  padding: 2.7em 0;
+  padding: 2.7em 0 4.7em;
 }
 /* tabs */
 .tab__item {
@@ -15,17 +15,19 @@
 .search__tabs {
   padding-right: 2rem;
   border-right: 2px solid var(--main-color);
-  -ms-flex: 0 0 13%;
-  flex: 0 0 13%;
-  max-width: 13%;
+  -ms-flex: 0 0 11%;
+  flex: 0 0 11%;
+  max-width: 11%;
 }
 .tabs__content {
-  -ms-flex: 0 0 85%;
-  flex: 0 0 85%;
-  max-width: 85%;
+  -ms-flex: 0 0 87%;
+  flex: 0 0 87%;
+  max-width: 87%;
 }
 .tab__content {
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  -ms-grid-columns: (minmax(16rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  display: -ms-grid;
   display: grid;
-  gap: 1.5rem;
+  gap: 1em;
 }

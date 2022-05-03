@@ -1,6 +1,7 @@
 .search__banner {
   background-color: var(--white-color);
   position: relative;
+  width: 93%;
   padding: 6rem 3rem;
   border-radius: var(--border-radius-md);
   -webkit-border-radius: var(--border-radius-md);

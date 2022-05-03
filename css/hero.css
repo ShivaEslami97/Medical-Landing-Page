@@ -12,6 +12,9 @@
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 2rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .hero__img {
   width: 46%;
@@ -35,8 +38,8 @@
 .hero__features-box {
   background-color: var(--primary-color);
   color: var(--white-color);
-  padding: 1rem 1rem;
-  width: 21rem;
+  padding: 0.9rem 1rem;
+  width: 22rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,6 +51,10 @@
   border-radius: var(--border-radius-sm);
   cursor: pointer;
 }
+.hero__features-box img {
+  height: 3rem;
+}
+
 .hero__img {
   display: -webkit-box;
   display: -ms-flexbox;
