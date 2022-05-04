@@ -82,7 +82,8 @@
 .section-title p {
   color: var(--primary-color-7);
   font-weight: var(--font-medium);
-  margin-top: 2.5rem;
+  margin: 1.5rem auto;
+  max-width: 50rem;
 }
 
 /* ------------------- */

@@ -6,15 +6,21 @@
   color: #96979b;
   font-weight: var(--font-semi-bold);
   font-size: var(--font-size-1xl);
-  margin-bottom: 2rem;
+  padding: 1.5rem 1rem;
   cursor: pointer;
+  border-right: 3px solid #d7d9de;
+}
+.tab__item:first-child {
+  padding-top: 0rem;
+}
+.tab__item:last-child {
+  padding-bottom: 0rem;
 }
 .tab__item.active {
   color: var(--primary-color);
+  border-right: 3px solid var(--main-color);
 }
 .search__tabs {
-  padding-right: 2rem;
-  border-right: 2px solid var(--main-color);
   -ms-flex: 0 0 11%;
   flex: 0 0 11%;
   max-width: 11%;
@@ -28,6 +34,9 @@
   -ms-grid-columns: (minmax(16rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   display: -ms-grid;
-  display: grid;
+  display: none;
   gap: 1em;
+}
+.tab__content.active {
+  display: grid;
 }
