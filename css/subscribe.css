@@ -1,0 +1,30 @@
+.subscribe__box {
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 20%);
+  background-color: var(--main-color);
+  padding: 4rem 4rem;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: var(--border-radius-md);
+  text-align: center;
+}
+.subscribe__title {
+  color: var(--white-color);
+  font-size: var(--font-size-4xl);
+  margin-bottom: 3rem;
+  line-height: 4rem;
+}
+.subscribe__input-box {
+  width: 60%;
+  margin: 0 auto;
+}
+.subscribe__input-box input {
+  background-color: var(--white-color);
+  padding: 1.9rem 1.5rem;
+}
+
+.subscribe__input-box .btn__primary {
+  position: absolute;
+  top: 1rem;
+  right: 0.7rem;
+  background-color: var(--primary-color);
+}

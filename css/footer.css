@@ -1,0 +1,35 @@
+.footer {
+  padding: 8rem 0 8rem;
+}
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  gap: 1rem;
+}
+.footer__social {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  border-top: 1px solid rgb(167 167 167 / 64%);
+  padding-top: 2rem;
+}
+.footer__social a {
+  color: var(--primary-color);
+  font-size: 3.3rem;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__item h4 {
+  color: var(--primary-color);
+}
+.footer__item ul.footer__navbar li {
+  margin-bottom: 1rem;
+}
+.footer__item ul.footer__navbar li a {
+  color: #6a6565;
+  font-weight: var(--font-medium);
+}
