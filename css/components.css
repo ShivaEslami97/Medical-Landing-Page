@@ -75,6 +75,34 @@
   color: var(--primary-color);
   background: var(--primary-color-2);
   font-weight: var(--font-bold);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.btn__secondary::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--primary-color-5);
+  height: 13rem;
+  width: 41rem;
+  border-radius: 50%;
+  left: 100%;
+  transition: all 0.7s;
+  top: 0;
+  bottom: 0;
+}
+.btn__secondary:hover {
+  color: var(--white-color);
+}
+.btn__secondary:hover:before {
+  top: -3rem;
+  left: -3rem;
 }
 /* ------------------- */
 /* Inputs         */
