@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap");
 @import "all.css";
+@import "animation.css";
 @import "flaticon.css";
 @import "boxicons.min.css";
 @import "reset.css";
@@ -15,3 +16,4 @@
 @import "feedback.css";
 @import "subscribe.css";
 @import "footer.css";
+@import "responsive.css";

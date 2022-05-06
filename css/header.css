@@ -33,6 +33,8 @@
 }
 .navbar {
   padding: 3.5rem 0rem;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
 }
 .site-logo {
   font-size: var(--font-size-3xl);
@@ -57,10 +59,81 @@
   -o-border-radius: var(--border-radius-sm);
   font-size: var(--font-size-3xl);
 }
-.header__item-right .btn__secondary {
+.header__item-right .btn__login {
   background: transparent;
+  box-shadow: none;
+  color: var(--primary-color);
+  font-weight: var(--font-bold);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.header__item-right .btn__login:hover {
+  color: var(--main-color);
 }
 .nav__link {
   color: var(--primary-color);
   font-weight: var(--font-semi-bold);
+  position: relative;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.nav__link:hover {
+  color: var(--main-color);
+}
+.nav__link::before {
+  content: "";
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  width: 0;
+  height: 0.1rem;
+  background-color: var(--main-color);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+.nav__link:focus::before,
+.nav__link:hover::before {
+  width: 100%;
+  right: auto;
+  left: 0;
+}
+.fixed-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.header.is-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: var(--white-color);
+  -webkit-box-shadow: 0 0 1.25rem rgb(108 118 134 / 10%);
+  box-shadow: 0 0 1.25rem rgb(108 118 134 / 10%);
+  -webkit-animation: 600ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 600ms ease-in-out 0s normal none 1 running fadeInDown;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+}
+.header.is-sticky .navbar {
+  padding: 3rem 0rem;
 }

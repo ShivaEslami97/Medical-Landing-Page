@@ -11,8 +11,6 @@
 .flex {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 
   /* gap: var(--gap, 1rem); */
 }
@@ -26,6 +24,9 @@
 }
 .block {
   display: block;
+}
+.hidden {
+  display: none;
 }
 .align-items-center {
   -ms-flex-align: center;
@@ -84,4 +85,24 @@
 }
 .text-align-center {
   text-align: center;
+}
+.animate1 {
+  -webkit-animation: up-down 1.5s infinite alternate;
+  animation: up-down 1.5s infinite alternate;
+}
+.animate2 {
+  -webkit-animation: up-down 2s infinite alternate;
+  animation: up-down 2s infinite alternate;
+}
+.animate3 {
+  -webkit-animation: left-right 1.5s infinite alternate;
+  animation: left-right 1.5s infinite alternate;
+}
+.animate-rotate {
+  -webkit-animation: rotation 20s infinite linear;
+  animation: rotation 20s infinite linear;
+}
+.animate-4 {
+  -webkit-animation: move 10s infinite linear;
+  animation: move 10s infinite linear;
 }

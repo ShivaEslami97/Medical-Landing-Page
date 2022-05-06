@@ -52,6 +52,7 @@ html {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {

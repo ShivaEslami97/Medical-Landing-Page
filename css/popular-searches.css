@@ -20,7 +20,7 @@
   color: var(--primary-color);
   border-right: 3px solid var(--main-color);
 }
-.search__tabs {
+/* .search__tabs {
   -ms-flex: 0 0 11%;
   flex: 0 0 11%;
   max-width: 11%;
@@ -29,7 +29,7 @@
   -ms-flex: 0 0 87%;
   flex: 0 0 87%;
   max-width: 87%;
-}
+} */
 .tab__content {
   -ms-grid-columns: (minmax(16rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -40,57 +40,8 @@
 .tab__content.active {
   display: grid;
 }
-@-webkit-keyframes jackInTheBox {
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0.1) rotate(30deg);
-    transform: scale(0.1) rotate(30deg);
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-  }
-
-  50% {
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-  }
-
-  70% {
-    -webkit-transform: rotate(3deg);
-    transform: rotate(3deg);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-@keyframes jackInTheBox {
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0.1) rotate(30deg);
-    transform: scale(0.1) rotate(30deg);
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-  }
-
-  50% {
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-  }
-
-  70% {
-    -webkit-transform: rotate(3deg);
-    transform: rotate(3deg);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-.animate__jackInTheBox {
-  -webkit-animation-name: jackInTheBox;
-  animation-name: jackInTheBox;
+.search__category {
+  display: grid;
+  grid-template-columns: 13rem 6fr;
+  gap: 2rem;
 }

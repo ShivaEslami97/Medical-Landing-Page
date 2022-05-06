@@ -13,7 +13,7 @@
 
 <body>
     <!-- header -->
-    <header class="header">
+    <header id="header" class="header fixed-top">
         <div class="container flex align-items-center justify-content-between">
             <!-- logo -->
             <div class="header__item-left">
@@ -34,7 +34,7 @@
             </div>
             <!-- header btns -->
             <div class="header__item-right flex gap-1">
-                <button type="button" class="btn btn__secondary">Log in</button>
+                <button type="button" class="btn btn__login">Log in</button>
                 <button type="button" class="btn btn__primary">Sign in</button>
             </div>
         </div>
@@ -62,11 +62,20 @@
                             <span>More Than 10 Million Patient Ratings</span>
                         </div>
                     </div>
+                    <div class="hero__icon-shape">
+                        <img class="hero__icon--two animate1" src="images/hero/stethoscope.png" alt="hero shape">
+                    </div>
                 </div>
                 <div class="hero__img">
-                    <img src="images/hero/hero-man.png" alt="">
+                    <img class="hero__main-img" src="images/hero/hero-man.png" alt="">
                     <div class="hero__img-shape"></div>
                     <div class="hero__img-shape"></div>
+                    <div class="hero__icon-shape">
+                        <img class="hero__icon--one animate3" src="images/hero/hospital.png" alt="hero shape">
+                        <img class="hero__icon--three animate-4" src="images/hero/medical-symbol.png" alt="hero shape">
+                        <img class="hero__icon--four animate-4" src="images/hero/medical-symbol (1).png"
+                            alt="hero shape">
+                    </div>
                 </div>
             </div>
         </section>
@@ -75,26 +84,22 @@
             <div class="container flex justify-content-center">
                 <div class="search__banner">
                     <!-- search inputs -->
-                    <div class="flex gap-3 justify-content-center">
-                        <div class="search__item">
+                    <div class="flex gap-2 justify-content-center ">
+                        <div class="search__inputs">
                             <div class="form-group">
                                 <i class="fa-solid fa-magnifying-glass"></i>
-                                <input class="form-input" type="text" id="search"
+                                <input class="form-input" type="text" id="search" autocomplete="off"
                                     placeholder="Search Doctor, Conditions or Procedures">
                             </div>
-                        </div>
-                        <div class="search__item">
                             <div class="form-group">
                                 <i class="fa-solid fa-location-dot"></i>
-                                <input class="form-input" type="text" id="search"
+                                <input class="form-input" type="text" id="search" autocomplete="off"
                                     placeholder="Search Doctor, Conditions or Procedures">
                             </div>
                         </div>
-                        <div class="search__item">
-                            <button type="button" class="btn btn__primary">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                        </div>
+                        <button type="button" class="btn btn__primary">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
                     </div>
                     <!-- search tags -->
                     <div class="search__description flex flex-d-column gap-15">
@@ -133,7 +138,7 @@
                     <h2>Popular Searches on Wecare</h2>
                 </div>
                 <!-- section main part -->
-                <div class="search__category flex gap-2">
+                <div class="search__category">
                     <!-- search tabs list -->
                     <ul class="search__tabs">
                         <li class="tab__item active">Specialities </li>
@@ -262,7 +267,7 @@
         </section>
         <!-- Find doctor -->
         <section class="find">
-            <div class="container flex">
+            <div class="container flex justify-content-between">
                 <div class="find__text">
                     <!-- section title -->
                     <div class="section-title">
@@ -299,11 +304,13 @@
                         <h4>Find the best doctor you need</h4>
                         <div class="form-group">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <input class="form-input" type="text" id="search" placeholder="Search Doctor">
+                            <input class="form-input" type="text" id="search" placeholder="Search Doctor"
+                                autocomplete="off">
                         </div>
                         <div class="form-group">
                             <i class="fa-solid fa-location-dot"></i>
-                            <input class="form-input" type="text" id="search" placeholder="Set Location">
+                            <input class="form-input" type="text" id="search" placeholder="Set Location"
+                                autocomplete="off">
                         </div>
                         <button type="button" class="btn btn__primary">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -315,7 +322,7 @@
         </section>
         <!-- Why choose us -->
         <section class="why-us">
-            <div class="container flex justify-content-between">
+            <div class="container flex justify-content-between flex-wrap">
                 <div class="why-us__img">
                     <img class="why-us__pic" src="images/1-removebg-preview.png" alt="Why choose us image">
                     <div class="why-us__shape"></div>
@@ -524,7 +531,7 @@
                         patients.</p>
                 </div>
                 <!-- feedback part -->
-                <div class="flex gap-2">
+                <div class="flex gap-2 flex-wrap">
                     <div class="feedback__media">
                         <img src="images/header-slide-img3.png" alt="feedback image">
                         <div class="feedback__shape"></div>
@@ -561,7 +568,8 @@
                         update from wecare</h3>
                     <div class="subscribe__input-box">
                         <div class="form-group">
-                            <input class="form-input" type="text" id="search" placeholder="Enter your email address">
+                            <input class="form-input" type="text" id="search" placeholder="Enter your email address"
+                                autocomplete="off">
                             <button type="button" class="btn btn__primary">
                                 Subscribe
                             </button>
@@ -571,6 +579,9 @@
             </div>
         </section>
     </main>
+    <button id="back-to-top" class="back-to-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
     <!-- footer -->
     <footer class="footer">
         <div class="container footer__wrapper">
@@ -583,7 +594,7 @@
                 </div>
                 <div class="footer__social">
                     <a class="footer__socials-list" href="#">
-                        <i class="bx bxl-facebook-square"></i>
+                        <i class="fa-brands fa-facebook-square"></i>
                     </a>
                     <a class="footer__socials-list" href="#">
                         <i class="bx bxl-linkedin-square"></i>
@@ -605,45 +616,45 @@
             <div class="footer__item">
                 <h4>For Patients</h4>
                 <ul class="footer__navbar">
-                    <li><a href="#">Dental Services</a></li>
-                    <li><a href="#">Emergency Medicine</a></li>
-                    <li><a href="#">Ophthalmology</a></li>
-                    <li><a href="#">Orthopedic Surgery</a></li>
-                    <li><a href="#">Neurosurgery</a></li>
-                    <li><a href="#">Radiation Oncology</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Dental Services</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Emergency Medicine</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Ophthalmology</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Orthopedic Surgery</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Neurosurgery</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Radiation Oncology</a></li>
                 </ul>
             </div>
             <div class="footer__item">
                 <h4>For Providers</h4>
                 <ul class="footer__navbar">
-                    <li><a href="#">Dental Services</a></li>
-                    <li><a href="#">Emergency Medicine</a></li>
-                    <li><a href="#">Ophthalmology</a></li>
-                    <li><a href="#">Orthopedic Surgery</a></li>
-                    <li><a href="#">Neurosurgery</a></li>
-                    <li><a href="#">Radiation Oncology</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Dental Services</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Emergency Medicine</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Ophthalmology</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Orthopedic Surgery</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Neurosurgery</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Radiation Oncology</a></li>
                 </ul>
             </div>
             <div class="footer__item">
                 <h4>For Partners</h4>
                 <ul class="footer__navbar">
-                    <li><a href="#">Dental Services</a></li>
-                    <li><a href="#">Emergency Medicine</a></li>
-                    <li><a href="#">Ophthalmology</a></li>
-                    <li><a href="#">Orthopedic Surgery</a></li>
-                    <li><a href="#">Neurosurgery</a></li>
-                    <li><a href="#">Radiation Oncology</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Dental Services</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Emergency Medicine</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Ophthalmology</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Orthopedic Surgery</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Neurosurgery</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Radiation Oncology</a></li>
                 </ul>
             </div>
             <div class="footer__item">
                 <h4>For Partners</h4>
                 <ul class="footer__navbar">
-                    <li><a href="#">Dental Services</a></li>
-                    <li><a href="#">Emergency Medicine</a></li>
-                    <li><a href="#">Ophthalmology</a></li>
-                    <li><a href="#">Orthopedic Surgery</a></li>
-                    <li><a href="#">Neurosurgery</a></li>
-                    <li><a href="#">Radiation Oncology</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Dental Services</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Emergency Medicine</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Ophthalmology</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Orthopedic Surgery</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Neurosurgery</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Radiation Oncology</a></li>
                 </ul>
             </div>
         </div>

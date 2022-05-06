@@ -15,9 +15,11 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 .hero__img {
   width: 46%;
+  position: relative;
 }
 .hero__heading {
   font-size: 5rem;
@@ -63,7 +65,7 @@
   -ms-flex-pack: center;
   justify-content: center;
 }
-.hero__img img {
+.hero__img .hero__main-img {
   height: 47rem;
   z-index: 3;
   border-radius: 59% 18% 33% 67% / 108% 70% 18% 32%;
@@ -71,11 +73,11 @@
   -moz-border-radius: 59% 18% 33% 67% / 108% 70% 18% 32%;
   -ms-border-radius: 59% 18% 33% 67% / 108% 70% 18% 32%;
   -o-border-radius: 59% 18% 33% 67% / 108% 70% 18% 32%;
-  transform: translateY(-2rem);
-  -webkit-transform: translateY(-2rem);
-  -moz-transform: translateY(-2rem);
-  -ms-transform: translateY(-2rem);
-  -o-transform: translateY(-2rem);
+  transform: translate(-2rem, -2rem);
+  -webkit-transform: translate(-2rem, -2rem);
+  -moz-transform: translate(-2rem, -2rem);
+  -ms-transform: translate(-2rem, -2rem);
+  -o-transform: translate(-2rem, -2rem);
 }
 .hero__img-shape {
   background-color: var(--main-color);
@@ -94,6 +96,8 @@
   border: 2px dashed var(--primary-color);
   height: 48rem;
   width: 37rem;
+  -webkit-animation: moveLeftBounce 15s linear infinite;
+  animation: moveLeftBounce 15s linear infinite;
 }
 .hero__img-shape:nth-child(3) {
   background-color: var(--main-color);
@@ -104,13 +108,31 @@
   -o-border-radius: 26% 74% 19% 81% / 69% 27% 73% 31%;
   box-shadow: -7px 3px 10px #a5a5a5, 6px 2px 10px #a5a5a5;
   -webkit-box-shadow: -7px 3px 10px #a5a5a5, 6px 2px 10px #a5a5a5;
-  /* animation: anim_1 44s linear infinite normal; */
+  -webkit-animation: moveBounce 15s linear infinite;
+  animation: moveBounce 15s linear infinite;
 }
-@keyframes anim_1 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.hero__icon-shape {
+}
+.hero__icon-shape img {
+  position: absolute;
+}
+.hero__icon--one {
+  left: 9rem;
+  top: 4rem;
+  height: 3rem;
+}
+.hero__icon--two {
+  left: -1rem;
+  top: -2rem;
+  height: 5rem;
+}
+.hero__icon--three {
+  left: -1rem;
+  top: 30rem;
+  height: 5rem;
+}
+.hero__icon--four {
+  right: 5rem;
+  top: -2rem;
+  height: 5rem;
 }

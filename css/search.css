@@ -13,6 +13,12 @@
   margin: -17rem 0 0;
   z-index: 4;
 }
+.search__inputs {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  width: 100%;
+}
 .search__item {
   -ms-flex: 0 0 44%;
   flex: 0 0 44%;
@@ -24,7 +30,7 @@
   max-width: 6%;
 }
 .search__banner .btn__primary {
-  padding: 2.3rem 2.5rem;
+  padding: 2.3rem 2.2rem;
 }
 .search__description {
   margin-top: 1.5rem;
@@ -34,8 +40,8 @@
   color: var(--primary-color);
 }
 .search__tags {
-  -ms-flex-pack: space-between;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .search__tags .btn__secondary {
   font-weight: var(--font-semi-bold);
