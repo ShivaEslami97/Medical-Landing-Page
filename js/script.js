@@ -14,7 +14,7 @@ function fn() {
 var header = document.getElementById("header");
 var sticky = header.offsetTop;
 function myFunction() {
-    if (window.pageYOffset > sticky) {
+    if (window.scrollY >= 50) {
         header.classList.add("is-sticky");
     } else {
         header.classList.remove("is-sticky");
