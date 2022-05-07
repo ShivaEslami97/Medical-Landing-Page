@@ -9,13 +9,10 @@ function fn() {
         }, 350);
     }
 }
+
 ////// sticky menu
-window.onscroll = function () {
-    myFunction()
-};
 var header = document.getElementById("header");
 var sticky = header.offsetTop;
-
 function myFunction() {
     if (window.pageYOffset > sticky) {
         header.classList.add("is-sticky");
@@ -39,9 +36,12 @@ document.addEventListener("scroll", () => {
     } else {
         backToTopButton.classList.add("hidden");
     }
+    /// sticky menu
+    myFunction();
 });
 
 backToTopButton.addEventListener("click", goToTop);
+
 ////// tab js
 const tabItemList = document.querySelectorAll('.tab__item');
 const tabContentList = document.querySelectorAll('.tab__content');
