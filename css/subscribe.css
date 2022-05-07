@@ -24,7 +24,10 @@
 
 .subscribe__input-box .btn__primary {
   position: absolute;
-  top: 1rem;
+  top: 0.8rem;
   right: 0.7rem;
   background-color: var(--primary-color);
+}
+.subscribe__input-box .btn__primary:before {
+  background: #0e1b2f;
 }

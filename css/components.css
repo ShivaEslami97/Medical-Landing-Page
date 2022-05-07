@@ -90,7 +90,7 @@
   content: "";
   position: absolute;
   z-index: -1;
-  background: var(--primary-color-5);
+  background: #97bbf2;
   height: 13rem;
   width: 41rem;
   border-radius: 50%;
@@ -99,9 +99,9 @@
   top: 0;
   bottom: 0;
 }
-.btn__secondary:hover {
+/* .btn__secondary:hover {
   color: var(--white-color);
-}
+} */
 .btn__secondary:hover:before {
   top: -3rem;
   left: -3rem;

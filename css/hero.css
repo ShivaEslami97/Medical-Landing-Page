@@ -52,11 +52,19 @@
   gap: 1rem;
   border-radius: var(--border-radius-sm);
   cursor: pointer;
+  transition: all 0.5s;
 }
 .hero__features-box img {
   height: 3rem;
+  transition: all 0.5s;
 }
-
+.hero__features-box:hover {
+  background: #0e1b2f;
+}
+.hero__features-box:hover img {
+  -webkit-animation: toBottomFromUp 0.5s forwards;
+  animation: toBottomFromUp 0.5s forwards;
+}
 .hero__img {
   display: -webkit-box;
   display: -ms-flexbox;
