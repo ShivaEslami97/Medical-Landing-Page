@@ -337,3 +337,32 @@
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
 }
+/* ------------------- */
+/* pagination         */
+/* ------------------- */
+
+.pagination__list .pagination_btn {
+  box-sizing: border-box;
+  background: var(--primary-color-5);
+  border-radius: 2rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0px 0.4rem;
+  cursor: pointer;
+}
+.pagination__list .pagination_btn:first-child {
+  position: relative;
+  background: var(--main-color);
+}
+.pagination__list .pagination_btn:first-child::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 2px solid var(--main-color);
+  overflow: visible;
+}

@@ -1,4 +1,4 @@
-.specialist .grid {
+.specialist .specialist__wrapper {
   -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2rem;
@@ -138,4 +138,8 @@
   transition-delay: 0.3s;
   transform: scale(1);
   opacity: 1;
+}
+.specialist .pagination__wrapper {
+  place-items: center;
+  margin-top: 3rem;
 }
