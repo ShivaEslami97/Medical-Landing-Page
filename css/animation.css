@@ -328,3 +328,19 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes heartBeat {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+@keyframes heartBeat {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.4;
+  }
+}

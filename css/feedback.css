@@ -10,6 +10,7 @@
   gap: 3rem;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
 }
 .feedback__media img {
   height: 50rem;

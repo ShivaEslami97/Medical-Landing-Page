@@ -1,4 +1,14 @@
-
+////// Preloader
+window.addEventListener('load', fn)
+function fn() {
+    // Preloader
+    if (document.getElementById('preloader')) {
+        setTimeout(() => {
+            document.getElementById('preloader').style.visibility = 'hidden';
+            document.getElementById('preloader').style.opacity = '0';
+        }, 350);
+    }
+}
 ////// sticky menu
 window.onscroll = function () {
     myFunction()
