@@ -1,5 +1,5 @@
 .specialist .specialist__wrapper {
-  -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
+  -ms-grid-columns: (minmax(26rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2rem;
 }
