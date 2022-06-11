@@ -14,7 +14,13 @@ This template has creative layout, supper smooth animation, unique features, mod
 You can see the demo [here](<https://shiva-eslami-wecare.netlify.app//>) 👈👈
 
 
-## Features
+## Screenshots
+
+![App Screenshot](https://user-images.githubusercontent.com/25490229/173186834-f99d41e6-79f7-4a3c-846b-2a59ccc71144.png)
+
+
+
+## ✨ Features
 
 ✔️ Responsive app\
 ✔️ Creative Layout\
