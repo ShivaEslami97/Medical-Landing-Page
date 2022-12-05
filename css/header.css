@@ -137,3 +137,9 @@
 .header.is-sticky .navbar {
   padding: 3rem 0rem;
 }
+.header__mobile-btn {
+  display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 1.7rem;
+}

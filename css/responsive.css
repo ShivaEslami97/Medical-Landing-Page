@@ -101,6 +101,9 @@
     flex: 0 0 60%;
     max-width: 60%;
   }
+  .user-account {
+    display: none;
+  }
   .navbar {
     position: absolute;
     top: 100%;
@@ -110,10 +113,22 @@
     padding: 2rem 1rem;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+    opacity: 0;
+    transition: all 0.35s ease;
+    visibility: hidden;
+    display: none;
+  }
+  .navbar.is-active {
+    visibility: visible;
+    opacity: 1;
+    display: block;
   }
   .nav__list {
     gap: 2.5rem;
     flex-direction: column;
+  }
+  .header__mobile-btn {
+    display: block;
   }
 }
 @media only screen and (max-width: 575px) {
