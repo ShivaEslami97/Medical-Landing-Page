@@ -163,6 +163,11 @@
 }
 
 @media only screen and (max-width: 695px) {
+  .hero__features {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .hero__features-box {
     background-color: var(--primary-color);
     color: var(--white-color);
