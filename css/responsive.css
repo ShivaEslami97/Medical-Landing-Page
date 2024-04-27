@@ -80,6 +80,10 @@
     display: block;
   }
 
+  .navbar.is-active .header__mobile-btn-icon::before {
+    content: "\f00d";
+  }
+
   .nav__list {
     gap: 2.5rem;
     flex-direction: column;
