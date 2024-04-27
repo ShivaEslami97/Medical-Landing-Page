@@ -80,8 +80,8 @@
     display: block;
   }
 
-  .navbar.is-active .header__mobile-btn-icon::before {
-    content: "\f00d";
+  .is-active .fa-bars.header__mobile-btn-icon::before {
+    content: "\f00d" !important;
   }
 
   .nav__list {
